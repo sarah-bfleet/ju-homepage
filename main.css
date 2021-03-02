@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+  }
+  
+  /*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Vendor-prefixed and regular ::selection selectors cannot be combined:
+   * https://stackoverflow.com/a/16982510/7133471
+   *
+   * Customize the background color to match your design.
+   */
+  
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  /*
+   * A better looking default horizontal rule
+   */
+  
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  
+  /*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+  
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+  
+  /*
+   * Remove default fieldset styles.
+   */
+  
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*
+   * Allow only vertical resizing of textareas.
+   */
+  
+  textarea {
+    resize: vertical;
+  }
+  
+    /* ==========================================================================
+     
+     Author's custom styles
+     ========================================================================== */
+  
+     
+
+html {
+    font-size: 16px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+body {
+    background-color: #bed1c6;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+h2, h4 {
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-align: center;
+    font-weight: normal;
+  }
+
+
+.wrapper {
+    max-width: 1200px;
+    width: 90%; 
+    margin: 0 auto;
+   }
+
+
+/* ====================================
+    HEADER 
+=================================== */
+
+header {
+    padding-top: 45px;
+}
+
+header button {
+    background-color: white;
+    cursor: pointer;
+}
+
+header i {
+    color: #bed1c6;
+}
+
+form {
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+form input, form button {
+    border: none;
+    outline: none;
+}
+
+nav {
+    font-family: 'Pathway Gothic One', sans-serif;
+  }
+  
+.navbar a:hover {
+    color: #91a298;
+}
+
+
+/* ====================================
+    HERO SECTION
+=================================== */
+
+.hero-area {
+    background: url('img/hero.png') center no-repeat #333;
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+  }
+
+
+/* ====================================
+    MAIN - SECTION 1
+=================================== */
+.intro-flex {
+    padding-bottom: 90px;
+}
+
+.discover-images {
+    position: relative;
+}
+
+.discover {
+    position: relative;
+}
+
+.discover img {
+    position: relative;
+}
+
+.discover button {
+    position: absolute;
+    top: 440px;
+    left: 60px;
+    background-color: white;
+    border-color: #a7b6ad;
+    color: #a7b6ad;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 10px 50px;
+    border-style: solid;
+}
+
+
+.discover button:hover {
+    background-color: #a7b6ad;
+    color: white;
+}
+
+/* ====================================
+    PRICING SECTION 
+=================================== */
+
+.price-flex {
+    padding: 50px 0;
+}
+
+.price {
+    background: url('img/bg-new.png') no-repeat;
+    background-size: cover;
+   
+    color: #a1aaa5;
+}
+
+.sizes {
+    padding-top: 74px;
+    text-align: center;
+    
+}
+
+/*.sizes div {
+    margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: stretch;
+    background-color: yellow;
+}*/
+
+
+.price h2 {
+    position: relative;
+    font-weight: normal;
+}
+
+.price h2::after {
+    content: "";
+    width: 55%;
+    height: 2px;
+    background: #a1aaa5;
+    position: absolute;
+    bottom: -5px;
+    left: 400px;
+  }
+
+
+.our-collection h2 {
+    margin: 105px 0 90px;
+    text-transform: uppercase;
+}
+
+
+
+/* ====================================
+    FOOTER SECTION 
+=================================== */
+
+footer {
+    padding-top: 135px;
+  }
+
+footer .row-1 h3 {
+       text-decoration: underline;
+   }
+
+address {
+       font-style: normal;
+       margin-top: 18.72px;
+       text-align: center;
+   }
+
+address p {
+       margin: 0;
+   }
+
+address a:hover {
+    color: #91a298;
+}
+
+.footer-row-3 h3 {
+    text-align: center;
+    margin-bottom: 30px;
+ }
+
+.user-email {
+    background-color: #ebf6f0;
+    border: none;
+    color: #a7b6ad;
+    padding: 12px 0 12px 20px;
+}
+
+.subscribe-btn {
+    background-color: white;
+    border: none;
+    color: #a7b6ad;
+    padding: 12px 0;
+    margin-top: 12px;
+}
+
+.subscribe-btn:hover {
+    background-color: #91a298;
+    color: white;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+.social p {
+    background: #bed1c6;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+}
+
+.social i:hover {
+    color: #91a298;
+}
+
+  /* ====================================
+     ====================================
+       Media Queries - TABLET 
+     ==================================
+     =================================== */
+  
+     @media only screen and (min-width: 768px) {
+        /* General styles */
+
+     }
+     
+ /* ==============================
+    ==============================
+      DESKTOP MEDIA QUERY
+    ================================
+    ================================*/
+  
+  @media only screen and (min-width: 1200px) {
+
+    p {
+        font-size: 25px;
+    }
+
+    h4 {
+        font-size: 65px;
+
+    }
+
+    .lang {
+        font-size: 48px;
+    }
+
+    .lang span {
+        color: #91a298;
+    }
+
+    .top-header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo {
+        margin-left: 100px;
+    }
+
+    .search-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-size: 48px;
+    }
+
+    .ring-pics ul {
+        display: flex;
+    }
+
+    .ring {
+        margin-right: 38px;
+    }
+
+    .section-1 h2 {
+        font-size: 60px;
+    }
+
+    .price h2 {
+        font-size: 72px;
+    }
+
+    .sizes div {
+        margin-right: 70px;
+        display: inline-block;
+    }
+    
+    .sizes .last {
+        margin-right: 0;
+    }
+
+    .our-collection {
+        position: relative;
+    }
+
+    .ring-pics {
+        position: relative;
+    }
+
+    .instagram h2 {
+        margin: 200px 0 75px;
+    }
+
+    .arrow {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        margin-top: -35px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+    }
+    
+    #arrow-left {
+        border-width: 20px 30px 20px 0;
+        border-color: transparent #ffffff transparent transparent;
+        left: -60px;
+    }
+    
+    #arrow-right {
+        border-width: 20px 0 20px 30px;
+        border-color: transparent transparent transparent #ffffff;
+        right: -60px;
+    }
+
+    .our-collection h2 {
+        font-size: 72px;
+    }
+
+    .discover-images {
+        display: flex;
+    }
+
+    .box-2 {
+        margin: 0 50px;
+    }
+
+    .instagram ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+
+    .instagram h2 {
+        font-size: 60px;
+    }
+
+    .intro-flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .intro-row1, .intro-row2 {
+        width: 50%;
+    }
+
+    .intro-row1 {
+        margin-right: 100px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-size: 36px;
+    }
+
+    footer h3 {
+        margin: 0;
+    }
+
+   
+    footer ul {
+        padding: 0;
+    }
+
+   .social ul {
+       padding-top: 75px;
+       display: flex;
+   }
+
+   .social ul li {
+       margin: 0 5px;
+   }
+
+   .user-email {
+       font-size: 30px;
+   }
+
+    .subscribe-btn {
+        font-size: 30px;
+        width: 387px;
+   }
+
+}
