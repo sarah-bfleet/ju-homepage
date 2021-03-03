@@ -90,8 +90,10 @@
      
      Author's custom styles
      ========================================================================== */
-  
-     
+* {
+    box-sizing: border-box;
+} 
+         
 
 html {
     font-size: 16px;
@@ -150,7 +152,7 @@ img {
     HEADER 
 =================================== */
 header {
-    padding: 50px 0;
+    padding: 40px 0;
     text-align: center;
 }
 
@@ -167,6 +169,7 @@ header i {
 .search-container {
     display: inline-block;
 }
+
 .search-form {
     background-color: white;
     border-radius: 5px;
@@ -176,6 +179,11 @@ header i {
 .search-form input, .search-form button {
     border: none;
     outline: none;
+}
+
+img .icon {
+  
+    color: white;
 }
  
 nav {
@@ -254,19 +262,8 @@ nav {
 
 .prices {
     padding-top: 74px;
-    text-align: center;
-    
+    text-align: center;   
 }
-
-/*.prices div {
-    margin-right: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-self: stretch;
-    background-color: yellow;
-}*/
-
 
 .price h2 {
     position: relative;
@@ -300,23 +297,28 @@ footer {
     text-align: center;
   }
 
-footer .col-1 h3 {
-    text-decoration: underline;
-   }
+
+footer .col-1 h3:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 15%;
+    border-bottom: 1px solid white;
+}
 
 address {
     font-style: normal;
     margin-top: 18.72px;
     text-align: center;
-   }
+ }
 
 address p {
     margin: 0;
-   }
+ }
 
 address a:hover {
     color: #91a298;
-}
+ }
 
 .footer-col-3 h3 {
     text-align: center;
@@ -336,7 +338,7 @@ address a:hover {
     border: none;
     color: #a7b6ad;
     padding: 12px 20px;
-    margin: 0 auto;
+    width: 176.8px;
 }
 
 .subscribe-btn:hover {
@@ -346,7 +348,7 @@ address a:hover {
 
 .social {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding-top: 40px;
 }
 
@@ -359,6 +361,7 @@ address a:hover {
     justify-content: center;
     align-items: center;
     border: 1px solid white;
+    margin: 18px 5px;
 }
 
 .social i:hover {
@@ -390,7 +393,6 @@ address a:hover {
 
     h4 {
         font-size: 65px;
-
     }
 
     header {
@@ -407,12 +409,13 @@ address a:hover {
 
     .top-header {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
+        margin: 0 100px;
     }
 
     .logo {
-        margin-left: 100px;
+        margin-left: 250px;
     }
 
     .search-container {
@@ -420,6 +423,10 @@ address a:hover {
         justify-content: space-between;
         align-items: center;
     }
+
+    .navbar {
+        width: 50%;
+   }
 
     nav ul {
         display: flex;
@@ -455,6 +462,10 @@ address a:hover {
 
     .box-2 {
         margin: 0 50px;
+    }
+
+    .price {
+        margin-bottom: 40px;
     }
 
     .price h2 {
@@ -540,18 +551,20 @@ address a:hover {
         margin: 0;
     }
 
+    footer .col-1 h3:after {
+        content: "";
+        display: block;
+        margin: 0 auto;
+        width: 60%;
+    }
    
     footer ul {
         padding: 0;
     }
 
-   .social ul {
-       padding-top: 75px;
+   .social {
        display: flex;
-   }
-
-   .social ul li {
-       margin: 0 5px;
+       justify-content: space-around;
    }
 
    .user-email {
