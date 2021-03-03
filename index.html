@@ -16,7 +16,7 @@
             </p>
             <img class="logo" src="img/logo.png" alt="JU Logo">
             <div class="search-container">
-                <form>
+                <form class="search-form" action="action_page.php">
                     <input type="text" placeholder="Search.." name="search">
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
@@ -79,7 +79,7 @@
         <section class="price">
            <div class="price-flex">
             <h2>First reason to buy JU - is the price</h2>
-            <div class="sizes">
+            <div class="prices">
                 <div class="price1">
                     <img src="img/size1.png" alt="">
                     <p>500 &euro;</p>
@@ -152,7 +152,7 @@
     </main>
 
    <footer class="wrapper">
-       <div class="row-1">
+       <div class="col-1">
            <h3>Contacts</h3>
            <ul>
                <li>Delivery & Retour</li>
@@ -160,7 +160,7 @@
                <li>Public Offert</li>
            </ul>
        </div>
-       <div class="row-2">
+       <div class="col-2">
              <address>
                 <a href="mailto:info@juparis.com">info@juparis.com</a><br>
                 <p>14 rue Tronchet, Paris, 75008</p>
@@ -173,12 +173,17 @@
              </div>
        </div>
 
-       <div class="footer-row-3">
-             <h3>Subscribe to the newsletter</h3>
-             <input type="text" name="name" value="Your email" class="user-email"><br>
-             <button class="subscribe-btn">Subscribe</button>
-       </div>
-        
+       <form class="subscribe-form" action="action_page.php">
+            <div class="footer-col-3">
+                <h3>Subscribe to the newsletter</h3>
+            </div>
+            <div class="user-info">
+                <input type="text" name="name" value="Your email" class="user-email"><br>
+            </div>
+            <div class="subscribe">
+                <button type="submit" class="subscribe-btn">Subscribe</button>
+           </div>
+     </form>
    </footer>
-</body>
+  </body>
 </html>

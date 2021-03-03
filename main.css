@@ -105,6 +105,24 @@ body {
     padding: 0;
 }
 
+p {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h2, h4 {
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-align: center;
+    font-weight: normal;
+  }
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -121,13 +139,6 @@ img {
     height: auto;
   }
 
-h2, h4 {
-    font-family: 'Pathway Gothic One', sans-serif;
-    text-align: center;
-    font-weight: normal;
-  }
-
-
 .wrapper {
     max-width: 1200px;
     width: 90%; 
@@ -138,10 +149,11 @@ h2, h4 {
 /* ====================================
     HEADER 
 =================================== */
-
 header {
-    padding-top: 45px;
+    padding: 50px 0;
+    text-align: center;
 }
+
 
 header button {
     background-color: white;
@@ -152,19 +164,23 @@ header i {
     color: #bed1c6;
 }
 
-form {
+.search-container {
+    display: inline-block;
+}
+.search-form {
     background-color: white;
     border-radius: 5px;
     padding: 5px;
 }
 
-form input, form button {
+.search-form input, .search-form button {
     border: none;
     outline: none;
 }
-
+ 
 nav {
     font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 20px;
   }
   
 .navbar a:hover {
@@ -210,7 +226,7 @@ nav {
     background-color: white;
     border-color: #a7b6ad;
     color: #a7b6ad;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
     padding: 10px 50px;
     border-style: solid;
@@ -231,19 +247,18 @@ nav {
 }
 
 .price {
-    background: url('img/bg-new.png') no-repeat;
+    background: url('img/bg-new.png') center no-repeat;
     background-size: cover;
-   
     color: #a1aaa5;
 }
 
-.sizes {
+.prices {
     padding-top: 74px;
     text-align: center;
     
 }
 
-/*.sizes div {
+/*.prices div {
     margin-right: 70px;
     display: flex;
     flex-direction: column;
@@ -281,28 +296,29 @@ nav {
 =================================== */
 
 footer {
-    padding-top: 135px;
+    padding: 40px 0 50px;
+    text-align: center;
   }
 
-footer .row-1 h3 {
-       text-decoration: underline;
+footer .col-1 h3 {
+    text-decoration: underline;
    }
 
 address {
-       font-style: normal;
-       margin-top: 18.72px;
-       text-align: center;
+    font-style: normal;
+    margin-top: 18.72px;
+    text-align: center;
    }
 
 address p {
-       margin: 0;
+    margin: 0;
    }
 
 address a:hover {
     color: #91a298;
 }
 
-.footer-row-3 h3 {
+.footer-col-3 h3 {
     text-align: center;
     margin-bottom: 30px;
  }
@@ -312,14 +328,15 @@ address a:hover {
     border: none;
     color: #a7b6ad;
     padding: 12px 0 12px 20px;
+    margin-bottom: 10px;
 }
 
 .subscribe-btn {
     background-color: white;
     border: none;
     color: #a7b6ad;
-    padding: 12px 0;
-    margin-top: 12px;
+    padding: 12px 20px;
+    margin: 0 auto;
 }
 
 .subscribe-btn:hover {
@@ -376,6 +393,10 @@ address a:hover {
 
     }
 
+    header {
+        padding-top: 45px;
+    }
+
     .lang {
         font-size: 48px;
     }
@@ -407,28 +428,45 @@ address a:hover {
         font-size: 48px;
     }
 
-    .ring-pics ul {
+    .section-1 h2 {
+        font-size: 60px;
+    }
+
+    .intro-flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .intro-row1, .intro-row2 {
+        width: 50%;
+    }
+
+    .intro-row1 {
+        margin-right: 100px;
+    }
+
+    .discover-images {
         display: flex;
     }
 
-    .ring {
-        margin-right: 38px;
+    .discover button {
+        font-size: 28px;
     }
 
-    .section-1 h2 {
-        font-size: 60px;
+    .box-2 {
+        margin: 0 50px;
     }
 
     .price h2 {
         font-size: 72px;
     }
 
-    .sizes div {
+    .prices div {
         margin-right: 70px;
         display: inline-block;
     }
     
-    .sizes .last {
+    .prices .last {
         margin-right: 0;
     }
 
@@ -436,14 +474,22 @@ address a:hover {
         position: relative;
     }
 
+    .our-collection h2 {
+        font-size: 72px;
+    }
+    
     .ring-pics {
         position: relative;
     }
 
-    .instagram h2 {
-        margin: 200px 0 75px;
+    .ring-pics ul {
+        display: flex;
     }
 
+    .ring {
+        margin-right: 38px;
+    }
+    
     .arrow {
         cursor: pointer;
         position: absolute;
@@ -465,19 +511,7 @@ address a:hover {
         border-color: transparent transparent transparent #ffffff;
         right: -60px;
     }
-
-    .our-collection h2 {
-        font-size: 72px;
-    }
-
-    .discover-images {
-        display: flex;
-    }
-
-    .box-2 {
-        margin: 0 50px;
-    }
-
+    
     .instagram ul {
         display: flex;
         padding: 0;
@@ -486,26 +520,20 @@ address a:hover {
 
     .instagram h2 {
         font-size: 60px;
+        margin: 200px 0 75px;
     }
 
-    .intro-flex {
-        display: flex;
-        justify-content: space-between;
-    }
 
-    .intro-row1, .intro-row2 {
-        width: 50%;
-    }
-
-    .intro-row1 {
-        margin-right: 100px;
-    }
+    /* =======================
+         FOOTER 
+    =========================*/
 
     footer {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         font-size: 36px;
+        padding-top: 135px;
     }
 
     footer h3 {
@@ -532,7 +560,8 @@ address a:hover {
 
     .subscribe-btn {
         font-size: 30px;
-        width: 387px;
+        width: 100%;
+        padding: 12px;
    }
 
 }
