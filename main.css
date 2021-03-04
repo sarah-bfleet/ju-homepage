@@ -113,10 +113,11 @@ p {
 
 h2 {
     font-size: 26px;
+    margin: 50px 0 20px;
 }
 
 h4 {
-    font-size: 24px;
+    font-size: 28px;
 }
 
 h2, h4 {
@@ -168,6 +169,7 @@ header i {
 
 .search-container {
     display: inline-block;
+    margin: 40px 0;
 }
 
 .search-form {
@@ -215,6 +217,10 @@ nav {
     padding-bottom: 90px;
 }
 
+.intro-flex p {
+    margin: 25px 0;
+}
+
 .discover-images {
     position: relative;
 }
@@ -251,7 +257,7 @@ nav {
 =================================== */
 
 .price-flex {
-    padding: 50px 0;
+    padding: 10px 0 50px;
 }
 
 .price {
@@ -261,28 +267,35 @@ nav {
 }
 
 .prices {
-    padding-top: 74px;
     text-align: center;   
+}
+
+.prices p {
+    margin: 5px 0;
+}
+
+.prices div {
+    margin-bottom: 50px;
 }
 
 .price h2 {
     position: relative;
     font-weight: normal;
+    margin-bottom: 40px;
 }
 
 .price h2::after {
     content: "";
-    width: 55%;
+    width: 70%;
     height: 2px;
     background: #a1aaa5;
     position: absolute;
     bottom: -5px;
-    left: 400px;
+    left: 60px;
   }
 
 
 .our-collection h2 {
-    margin: 105px 0 90px;
     text-transform: uppercase;
 }
 
@@ -322,14 +335,14 @@ address a:hover {
 
 .footer-col-3 h3 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
  }
 
 .user-email {
     background-color: #ebf6f0;
     border: none;
     color: #a7b6ad;
-    padding: 12px 0 12px 20px;
+    text-align: center;
     margin-bottom: 10px;
 }
 
@@ -337,7 +350,6 @@ address a:hover {
     background-color: white;
     border: none;
     color: #a7b6ad;
-    padding: 12px 20px;
     width: 176.8px;
 }
 
@@ -375,9 +387,92 @@ address a:hover {
      =================================== */
   
      @media only screen and (min-width: 768px) {
-        /* General styles */
+    
+    h2 {
+        margin: 80px 0 30px;
+        font-size: 36px;
+    }
 
-     }
+    h4 {
+        margin-top: 5px;
+        font-size: 36px;
+    } 
+
+    .top-header p {
+        display: inline;
+    }
+
+    .logo {
+        margin: 0 60px;
+    }
+
+    .lang {
+        font-size: 30px;
+    }
+
+    nav ul {
+            display: flex;
+            justify-content: space-between;
+            text-transform: uppercase;
+            font-size: 38px;
+        }
+
+    .section-1 p {
+        font-size: 20px;
+    }
+    
+    .discover-images {
+            display: flex;
+            justify-content: space-between;
+        }
+
+    .discover button {
+            top: 280px;
+            left: 20px;
+            font-size: 20px;
+            padding: 10px 50px;
+        }
+
+    .discover.box-2 {
+        margin: 0 15px;
+    }
+    
+    .price h2::after {
+            content: "";
+            width: 55%;
+            height: 2px;
+            background: #a1aaa5;
+            position: absolute;
+            bottom: -5px;
+            left: 178px;
+          }
+   
+    .ring-pics ul {
+        display: flex;
+    }
+
+    .ring-pics ul li {
+        margin: 0 5px;
+    }
+
+    .instagram ul {
+        display: flex;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    footer .col-1 h3:after {
+        content: "";
+        display: block;
+        margin: 0 auto;
+        width: 60%;
+    }
+
+}
      
  /* ==============================
     ==============================
@@ -389,6 +484,10 @@ address a:hover {
 
     p {
         font-size: 25px;
+    }
+
+    h2 {
+        font-size: 72px;
     }
 
     h4 {
@@ -409,13 +508,10 @@ address a:hover {
 
     .top-header {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        margin: 0 100px;
-    }
-
-    .logo {
-        margin-left: 250px;
+        width: 60%;
+        margin: auto;
     }
 
     .search-container {
@@ -425,19 +521,13 @@ address a:hover {
     }
 
     .navbar {
-        width: 50%;
-   }
+        width: 60%;
+    }
 
     nav ul {
-        display: flex;
-        justify-content: space-between;
-        text-transform: uppercase;
         font-size: 48px;
     }
 
-    .section-1 h2 {
-        font-size: 60px;
-    }
 
     .intro-flex {
         display: flex;
@@ -458,6 +548,10 @@ address a:hover {
 
     .discover button {
         font-size: 28px;
+        top: 440px;
+        left: 60px;
+        font-size: 28px;
+        padding: 10px 50px;
     }
 
     .box-2 {
@@ -466,10 +560,6 @@ address a:hover {
 
     .price {
         margin-bottom: 40px;
-    }
-
-    .price h2 {
-        font-size: 72px;
     }
 
     .prices div {
@@ -481,20 +571,21 @@ address a:hover {
         margin-right: 0;
     }
 
+    .price h2::after {
+       /* content: "";
+        width: 55%;
+        height: 2px;
+        position: absolute;
+        bottom: -5px;*/
+        left: 380px;
+      }
+
     .our-collection {
         position: relative;
-    }
-
-    .our-collection h2 {
-        font-size: 72px;
     }
     
     .ring-pics {
         position: relative;
-    }
-
-    .ring-pics ul {
-        display: flex;
     }
 
     .ring {
@@ -524,7 +615,6 @@ address a:hover {
     }
     
     .instagram ul {
-        display: flex;
         padding: 0;
         margin: 0;
     }
@@ -574,7 +664,7 @@ address a:hover {
     .subscribe-btn {
         font-size: 30px;
         width: 100%;
-        padding: 12px;
+       
    }
 
 }
