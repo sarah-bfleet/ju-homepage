@@ -10,29 +10,33 @@
 </head>
 <body>
     <header>
-        <div class="top-header">
-            <p class="lang">
-                <a href="#"><span>EN</span>/FR</a>
-            </p>
-            <img class="logo" src="img/logo.png" alt="JU Logo">
-            <div class="search-container">
-                <form class="search-form" action="action_page.php">
-                    <input type="text" placeholder="Search.." name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-                <img class="icon user-icon" src="img/user-img.png" alt="user icon">
-                <img class="icon cart-icon" src="img/cart.png" alt="shopping cart icon">
-              </div>
+        <div class="header-container">
+            <div class="top-header">
+                <div class="lang">
+                    <a href="#"><span>EN</span>/FR</a>
+                </div>
+                <img class="logo" src="img/logo1.png" alt="JU Logo">
+    
+                <div class="search-container">
+                    <!--<form class="search-form" action="action_page.php">
+                        <input type="text" name="search">
+                        <button type="submit"><i class="fa fa-search fa-lg"></i></button>
+                    </form> -->
+                    <i class="fa fa-search" id="mobile-search"></i>
+                    <i class="fas fa-user"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </div>
+            <nav class="wrapper navbar">
+                <ul>
+                    <li><a href="#">Bridal</a></li>
+                    <li><a href="#">Sur-Mesure</a></li>
+                    <li><a href="#">Charity</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
         </div>
-       
-        <nav class="wrapper navbar">
-            <ul>
-                <li><a href="#">Bridal</a></li>
-                <li><a href="#">Sur-Mesure</a></li>
-                <li><a href="#">Charity</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-        </nav>
+        
     </header>
 
 
@@ -76,43 +80,44 @@
 
         </section>
 
-        <section class="price">
-           <div class="price-flex">
-            <h2>First reason to buy JU - is the price</h2>
-            <div class="prices">
-                <div class="price1">
-                    <p>0.25 ct</p>
-                    <img src="img/size1.png" alt="">
-                    <p>500 &euro;</p>
-                </div>
-                <div>
-                    <p>0.35 ct</p>
-                    <img src="img/size2.png" alt="">
-                    <p>700 &euro;</p>
-                </div>
-                <div>
-                    <p>0.50 ct</p>
-                    <img src="img/size3.png" alt="">
-                    <p>1000 &euro;</p>
-                </div>
-                <div>
-                    <p>0.65 ct</p>
-                    <img src="img/size4.png" alt="">
-                    <p>1500 &euro;</p>
-                </div>
-                <div>
-                    <p>0.85 ct</p>
-                    <img src="img/size5.png" alt="">
-                    <p>2000 &euro;</p>
-                </div>
-                <div class="last">
-                    <p>1.00 ct</p>
-                    <img src="img/size6.png" alt="">
-                    <p>3000 &euro;</p>
-                </div>
-           </div> 
-        </div>
-    </section>
+        <section class="section-2-bg">
+           <div class="prices-container">
+                <h2>First reason to buy JU - is the price</h2>
+                <div class="border-bottom"></div>
+                <div class="prices-section">
+                    <div>
+                        <p>0.25 ct</p>
+                        <img src="img/size1.png" alt="">
+                        <p>500 &euro;</p>
+                    </div>
+                    <div>
+                        <p>0.35 ct</p>
+                        <img src="img/size2.png" alt="">
+                        <p>700 &euro;</p>
+                    </div>
+                    <div>
+                        <p>0.50 ct</p>
+                        <img src="img/size3.png" alt="">
+                        <p>1000 &euro;</p>
+                    </div>
+                    <div>
+                        <p>0.65 ct</p>
+                        <img src="img/size4.png" alt="">
+                        <p>1500 &euro;</p>
+                    </div>
+                    <div>
+                        <p>0.85 ct</p>
+                        <img src="img/size5.png" alt="">
+                        <p>2000 &euro;</p>
+                    </div>
+                    <div class="last">
+                        <p>1.00 ct</p>
+                        <img src="img/size6.png" alt="">
+                        <p>3000 &euro;</p>
+                    </div>
+                </div> 
+            </div>
+        </section>
 
         <section class="our-collection wrapper">
             <h2>Our Collection</h2>
@@ -186,13 +191,6 @@
             <input type="text" name="name" value="Your email" class="user-email"><br>
             <button type="submit" class="subscribe-btn">Subscribe</button>
         </form>
-
-          <!-- <div class="user-info">
-            <input type="text" name="name" value="Your email" class="user-email"><br>
-        </div>
-        <div class="subscribe">
-            <button type="submit" class="subscribe-btn">Subscribe</button>
-       </div>-->
      
    </footer>
   </body>

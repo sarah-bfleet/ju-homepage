@@ -153,46 +153,53 @@ img {
     HEADER 
 =================================== */
 header {
-    padding: 40px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-container {
     text-align: center;
 }
 
-
-header button {
-    background-color: white;
-    cursor: pointer;
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 10px;
+    margin: 0 20px;
 }
 
-header i {
-    color: #bed1c6;
-}
-
-.search-container {
-    display: inline-block;
-    margin: 40px 0;
+.logo {
+    width: 50px;
+    height: 70px;
 }
 
 .search-form {
-    background-color: white;
-    border-radius: 5px;
-    padding: 5px;
+    display: none;
 }
 
-.search-form input, .search-form button {
-    border: none;
-    outline: none;
-}
-
-img .icon {
-  
+.fa-shopping-cart, .fa-user, #mobile-search {
     color: white;
+}
+
+.fa-user {
+    margin: 0 8px;
 }
  
 nav {
     font-family: 'Pathway Gothic One', sans-serif;
-    font-size: 20px;
   }
   
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 8px;
+}
 .navbar a:hover {
     color: #91a298;
 }
@@ -203,10 +210,10 @@ nav {
 =================================== */
 
 .hero-area {
-    background: url('img/hero.png') center no-repeat #333;
+    background: url('img/hero.png') center no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 600px;
+    min-height: 400px;
   }
 
 
@@ -252,48 +259,47 @@ nav {
     color: white;
 }
 
-/* ====================================
+/* ==================================
     PRICING SECTION 
 =================================== */
 
-.price-flex {
-    padding: 10px 0 50px;
-}
-
-.price {
+.section-2-bg  {
     background: url('img/bg-new.png') center no-repeat;
     background-size: cover;
     color: #a1aaa5;
 }
 
-.prices {
-    text-align: center;   
+.prices-container {
+    padding: 10px 0 50px;
 }
 
-.prices p {
-    margin: 5px 0;
-}
-
-.prices div {
-    margin-bottom: 50px;
-}
-
-.price h2 {
-    position: relative;
+.prices-container h2 {
     font-weight: normal;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
-.price h2::after {
-    content: "";
+.border-bottom {
+    margin: 0 auto 20px;
     width: 70%;
     height: 2px;
     background: #a1aaa5;
-    position: absolute;
-    bottom: -5px;
-    left: 60px;
-  }
+}
 
+.prices-section {
+    text-align: center;   
+}
+
+.prices-section p {
+    margin: 5px 0;
+}
+
+.prices-section div {
+    margin-bottom: 50px;
+}
+
+/* ==================================
+    OUR COLLECTION 
+=================================== */
 
 .our-collection h2 {
     text-transform: uppercase;
@@ -302,7 +308,7 @@ nav {
 
 
 /* ====================================
-    FOOTER SECTION 
+      FOOTER 
 =================================== */
 
 footer {
@@ -310,6 +316,10 @@ footer {
     text-align: center;
   }
 
+.footer-col-3 h3 {
+    text-align: center;
+    margin-bottom: 20px;
+ }
 
 footer .col-1 h3:after {
     content: "";
@@ -331,11 +341,6 @@ address p {
 
 address a:hover {
     color: #91a298;
- }
-
-.footer-col-3 h3 {
-    text-align: center;
-    margin-bottom: 20px;
  }
 
 .user-email {
@@ -398,54 +403,89 @@ address a:hover {
         font-size: 36px;
     } 
 
-    .top-header p {
+    header {
+        font-size: 25px;
+    }
+
+    /*.top-header p {
         display: inline;
+    }*/
+
+    .top-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
     }
 
     .logo {
-        margin: 0 60px;
+        margin: 0 0 0 100px;
     }
 
-    .lang {
-        font-size: 30px;
+    header button {
+        background-color: white;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+    
+    header i {
+        color: #bed1c6;
+    }
+    
+    /*#mobile-search {
+        display: none;
+    }*/
+    
+    .search-form input, .search-form button {
+        border: none;
+        outline: none;
+    }
+
+    .search-form {
+        background-color: white;
+        border-radius: 5px;
+        padding: 0 5px;
+        display: inline-block;
+    }
+
+    .search-container {
+        display: flex;
+        margin-left: 50px;
     }
 
     nav ul {
-            display: flex;
-            justify-content: space-between;
-            text-transform: uppercase;
-            font-size: 38px;
-        }
+       display: flex;
+       
+       text-transform: uppercase;
+    }
+
+    nav li {
+        margin: 0 50px;
+    }
 
     .section-1 p {
         font-size: 20px;
     }
     
     .discover-images {
-            display: flex;
-            justify-content: space-between;
-        }
+        display: flex;
+        justify-content: space-between;
+    }
 
     .discover button {
-            top: 280px;
-            left: 20px;
-            font-size: 20px;
-            padding: 10px 50px;
-        }
+        top: 280px;
+        left: 20px;
+        font-size: 20px;
+        padding: 10px 50px;
+}
 
     .discover.box-2 {
         margin: 0 15px;
     }
-    
-    .price h2::after {
-            content: "";
-            width: 55%;
-            height: 2px;
-            background: #a1aaa5;
-            position: absolute;
-            bottom: -5px;
-            left: 178px;
-          }
+
+    .border-bottom {
+        width: 50%;
+    }
    
     .ring-pics ul {
         display: flex;
@@ -457,6 +497,7 @@ address a:hover {
 
     .instagram ul {
         display: flex;
+        justify-content: center;
     }
 
     footer {
@@ -494,14 +535,6 @@ address a:hover {
         font-size: 65px;
     }
 
-    header {
-        padding-top: 45px;
-    }
-
-    .lang {
-        font-size: 48px;
-    }
-
     .lang span {
         color: #91a298;
     }
@@ -524,10 +557,9 @@ address a:hover {
         width: 60%;
     }
 
-    nav ul {
-        font-size: 48px;
-    }
-
+    .hero-area {
+        min-height: 600px;
+      }
 
     .intro-flex {
         display: flex;
@@ -558,27 +590,18 @@ address a:hover {
         margin: 0 50px;
     }
 
-    .price {
+    .section-2-bg  {
         margin-bottom: 40px;
     }
 
-    .prices div {
+    .prices-section div {
         margin-right: 70px;
         display: inline-block;
     }
     
-    .prices .last {
+    .prices-section .last {
         margin-right: 0;
     }
-
-    .price h2::after {
-       /* content: "";
-        width: 55%;
-        height: 2px;
-        position: absolute;
-        bottom: -5px;*/
-        left: 380px;
-      }
 
     .our-collection {
         position: relative;
