@@ -16,17 +16,14 @@
                     <a href="#"><span>EN</span>/FR</a>
                 </div>
                 <img class="logo" src="img/logo1.png" alt="JU Logo">
-    
+
                 <div class="search-container">
-                    <!--<form class="search-form" action="action_page.php">
-                        <input type="text" name="search">
-                        <button type="submit"><i class="fa fa-search fa-lg"></i></button>
-                    </form> -->
-                    <i class="fa fa-search" id="mobile-search"></i>
+                    <i class="fa fa-search" id="search-icon"></i>
                     <i class="fas fa-user"></i>
                     <i class="fas fa-shopping-cart"></i>
                 </div>
             </div>
+
             <nav class="wrapper navbar">
                 <ul>
                     <li><a href="#">Bridal</a></li>
@@ -60,24 +57,26 @@
             </div>
             
             <div class="discover-images">
+                    <div id="arrow-left1" class="arrow1"></div>
+                    <div class="discover box-1">
+                        <img src="img/discover-img-2.png" alt="">
+                        <button>DISCOVER</button>
+                        <h4>BRIDAL</h4>
+                    </div>
+                    <div class="discover box-2 hide">
+                        <img src="img/discover-img-3.png" alt="">
+                        <button>DISCOVER</button>
+                        <h4>SUR-MESURE</h4>
+                    </div>
+                    <div class="discover box-3 hide">
+                        <img src="img/discover-img-1.png" alt="">
+                        <button>DISCOVER</button>
+                        <h4>CHARITY</h4>
+                    </div>
+                    <div id="arrow-right1" class="arrow1"></div>
+                </div>
                 
-                <div class="discover box-1">
-                    <img src="img/discover-img-2.png" alt="">
-                    <button>DISCOVER</button>
-                    <h4>BRIDAL</h4>
-                </div>
-                <div class="discover box-2">
-                    <img src="img/discover-img-3.png" alt="">
-                    <button>DISCOVER</button>
-                    <h4>SUR-MESURE</h4>
-                </div>
-                <div class="discover box-3">
-                    <img src="img/discover-img-1.png" alt="">
-                    <button>DISCOVER</button>
-                    <h4>CHARITY</h4>
-                </div>
-            </div>
-
+               
         </section>
 
         <section class="section-2-bg">
@@ -122,50 +121,54 @@
         <section class="our-collection wrapper">
             <h2>Our Collection</h2>
             <div class="ring-pics">
-                <div id="arrow-left" class="arrow"></div>
-                <ul>
-                    <li class="ring">
-                        <img src="img/ring1.png" alt="diamond ring with gold band">
-                    <li>
-                    <li class="ring">
+            <div id="arrow-left" class="arrow"></div>
+                <div>
+                    <img src="img/ring1.png" alt="diamond ring with gold band">
+                </div>
+                    <div class="ring hide">
                         <img src="img/ring4.png" alt="diamond ring">
-                    </li>
-                    <li class="ring">
+                    </div>
+                    <div class="ring hide">
                         <img src="img/ring3.png" alt="diamond ring with gold band">
-                    </li>
-                    <li>
+                    </div>
+                    <div class="hide">
                         <img src="img/ring4.png" alt="diamond ring">
-                    </li>
-                </ul>
+                    </div>
                 <div id="arrow-right" class="arrow"></div>
             </div>
         </section>
 
         <section class="instagram">
             <h2>Follow us on Instagram</h2>
-            <ul>
-                <li>
-                    <img src="img/ring5.png" alt="">
-                </li>
-                <li>
-                    <img src="img/hand3.png" alt="">
-                </li>
-                
-                <li>
-                    <img src="img/hand2.png" alt="">
-                </li>
-                <li>
-                    <img src="img/hand1.png" alt="">
-                </li>
-                
-            </ul>
+        <div class="slideshow-container">
+        <div id="arrow-left2" class="arrow2"></div>
+            <div class="mySlides1">
+              <img src="img/ring5.png" alt="">
+            </div>
+          
+            <div class="mySlides1 hide">
+              <img src="img/hand3.png" alt="">
+            </div>
+          
+            <div class="mySlides1 hide">
+              <img src="img/hand2.png" alt="">
+            </div>
+
+            <div class="mySlides1 hide">
+                <img src="img/hand1.png" alt="">
+              </div>
+              <div id="arrow-right2" class="arrow2"></div>
+          </div>
+         
         </section>
+        
+
     </main>
 
    <footer class="wrapper">
        <div class="col-1">
            <h3>Contacts</h3>
-           <ul>
+           <ul class="contacts">
                <li>Delivery & Retour</li>
                <li>Questions</li>
                <li>Public Offert</li>
@@ -188,7 +191,7 @@
             <div class="footer-col-3">
                 <h3>Subscribe to the newsletter</h3>
             </div>
-            <input type="text" name="name" value="Your email" class="user-email"><br>
+            <input type="text" name="name" value="Your email" class="user-email">
             <button type="submit" class="subscribe-btn">Subscribe</button>
         </form>
      

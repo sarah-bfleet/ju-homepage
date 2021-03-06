@@ -117,7 +117,8 @@ h2 {
 }
 
 h4 {
-    font-size: 28px;
+    font-size: 32px;
+    margin: 15px 0 40px;
 }
 
 h2, h4 {
@@ -176,13 +177,10 @@ header {
     height: 70px;
 }
 
-.search-form {
-    display: none;
-}
-
-.fa-shopping-cart, .fa-user, #mobile-search {
+.fa-shopping-cart, .fa-user, #search-icon {
     color: white;
 }
+
 
 .fa-user {
     margin: 0 8px;
@@ -242,7 +240,7 @@ nav li {
 
 .discover button {
     position: absolute;
-    top: 440px;
+    top: 400px;
     left: 60px;
     background-color: white;
     border-color: #a7b6ad;
@@ -257,6 +255,30 @@ nav li {
 .discover button:hover {
     background-color: #a7b6ad;
     color: white;
+}
+
+.arrow1 {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+
+#arrow-left1 {
+    border-width: 20px 30px 20px 0;
+    border-color: transparent #bed1c6 transparent transparent;
+    left: 20px;
+    z-index: 1;
+}
+
+
+#arrow-right1 {
+    border-width: 20px 0 20px 30px;
+    border-color: transparent transparent transparent #bed1c6;
+    right: 20px;
 }
 
 /* ==================================
@@ -301,11 +323,73 @@ nav li {
     OUR COLLECTION 
 =================================== */
 
+.our-collection {
+    position: relative;
+}
+
 .our-collection h2 {
     text-transform: uppercase;
 }
 
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
 
+
+#arrow-left {
+    border-width: 20px 30px 20px 0;
+    border-color: transparent #bed1c6 transparent transparent;
+    left: 20px;
+}
+
+#arrow-right {
+    border-width: 20px 0 20px 30px;
+    border-color: transparent transparent transparent #bed1c6;
+    right: 20px;
+}
+
+/* ==================================
+    INSTAGRAM 
+=================================== */
+
+.instagram {
+    position: relative;
+}
+
+.slideshow-container {
+    position: relative;
+}
+
+.hide {
+    display: none;
+}
+
+.arrow2 {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+
+#arrow-left2 {
+    border-width: 20px 30px 20px 0;
+    border-color: transparent #ffffff transparent transparent;
+    left: 20px;
+}
+
+#arrow-right2 {
+    border-width: 20px 0 20px 30px;
+    border-color: transparent transparent transparent #ffffff;
+    right: 20px;
+}
 
 /* ====================================
       FOOTER 
@@ -315,6 +399,11 @@ footer {
     padding: 40px 0 50px;
     text-align: center;
   }
+
+.contacts li:hover {
+    color: #91a298;
+    cursor: pointer;
+}
 
 .footer-col-3 h3 {
     text-align: center;
@@ -349,13 +438,15 @@ address a:hover {
     color: #a7b6ad;
     text-align: center;
     margin-bottom: 10px;
+    display: inline-block;
 }
 
 .subscribe-btn {
     background-color: white;
     border: none;
     color: #a7b6ad;
-    width: 176.8px;
+    /*width: 176.8px;*/
+    display: inline-block;
 }
 
 .subscribe-btn:hover {
@@ -385,6 +476,39 @@ address a:hover {
     color: #91a298;
 }
 
+/* ====================================
+     ====================================
+       Media Queries - Smaller Tablet 
+     ==================================
+     =================================== */
+  
+     @media only screen and (min-width: 480px) {
+        
+
+    .instagram ul,  .our-collection {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+   
+
+    .user-email {
+            font-size: 20px;
+        }
+     
+    .subscribe-btn {
+             font-size: 20px;
+        }
+
+    .border-bottom {
+            margin: 0 auto 20px;
+            width: 40%;
+            height: 2px;
+            background: #a1aaa5;
+        }
+
+     }
   /* ====================================
      ====================================
        Media Queries - TABLET 
@@ -403,13 +527,13 @@ address a:hover {
         font-size: 36px;
     } 
 
+    .hide {
+        display: block;
+    }
+
     header {
         font-size: 25px;
     }
-
-    /*.top-header p {
-        display: inline;
-    }*/
 
     .top-header{
         display: flex;
@@ -432,9 +556,6 @@ address a:hover {
         color: #bed1c6;
     }
     
-    /*#mobile-search {
-        display: none;
-    }*/
     
     .search-form input, .search-form button {
         border: none;
@@ -483,21 +604,64 @@ address a:hover {
         margin: 0 15px;
     }
 
+    .arrow1 {
+        display: none;
+    }
+
     .border-bottom {
         width: 50%;
     }
    
-    .ring-pics ul {
+    .ring-pics  {
         display: flex;
     }
 
-    .ring-pics ul li {
+    .ring-pics div {
         margin: 0 5px;
     }
 
-    .instagram ul {
+    .our-collection {
+        position: relative;
+    }
+    
+    .ring-pics {
+        position: relative;
+    }
+
+    .ring {
+        margin-right: 38px;
+    }
+    
+    .arrow {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        margin-top: -35px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+    }
+    
+    #arrow-left {
+        border-width: 20px 30px 20px 0;
+        border-color: transparent #ffffff transparent transparent;
+        left: -40px;
+    }
+    
+    #arrow-right {
+        border-width: 20px 0 20px 30px;
+        border-color: transparent transparent transparent #ffffff;
+        right: -40px;
+    }
+
+    .slideshow-container {
         display: flex;
         justify-content: center;
+        align-items: center;   
+    }
+
+    .arrow2 {
+        display: none;
     }
 
     footer {
@@ -511,6 +675,14 @@ address a:hover {
         display: block;
         margin: 0 auto;
         width: 60%;
+    }
+
+    .subscribe-btn {
+       
+        display: block;
+        text-align: center;
+        padding: 0 78px;
+        
     }
 
 }
@@ -603,37 +775,11 @@ address a:hover {
         margin-right: 0;
     }
 
-    .our-collection {
-        position: relative;
-    }
-    
-    .ring-pics {
-        position: relative;
-    }
-
-    .ring {
-        margin-right: 38px;
-    }
-    
-    .arrow {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        margin-top: -35px;
-        width: 0;
-        height: 0;
-        border-style: solid;
-    }
-    
     #arrow-left {
-        border-width: 20px 30px 20px 0;
-        border-color: transparent #ffffff transparent transparent;
         left: -60px;
     }
     
     #arrow-right {
-        border-width: 20px 0 20px 30px;
-        border-color: transparent transparent transparent #ffffff;
         right: -60px;
     }
     
@@ -685,8 +831,10 @@ address a:hover {
    }
 
     .subscribe-btn {
-        font-size: 30px;
-        width: 100%;
+       font-size: 30px;
+       display: block;
+       text-align: center;
+       padding: 0 120px;
        
    }
 
