@@ -476,8 +476,56 @@ address a:hover {
     color: #91a298;
 }
 
+/* ==================================
+    PRODUCT PAGE
+    =================================*/
+
+.product-info, .other-options {
+    padding-top: 50px;
+    color: #8f7463;
+    font-weight: medium;
+}
+
+.description {
+    color: white;
+}
+
+.fade-bg {
+    background-color: #d8ece1;
+    border-radius: 6px;
+}
+
+.colors {
+    background-color: #d8ece1;
+    padding: 40px 20px;
+}
+
+.colors h2 {
+    margin: 0px 0px 30px;
+}
+
+.reference-num {
+    margin-left: 3px;
+    padding: 3px 4px;
+}
+
+.diamond-weight-form {
+    padding: 24px 12px;
+    display: inline-block;
+}
+
+.bag-btn {
+    background-color: #8f7463;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+}
+
 /* ====================================
-     ====================================
+     ==================================
        Media Queries - Smaller Tablet 
      ==================================
      =================================== */
@@ -681,8 +729,51 @@ address a:hover {
        
         display: block;
         text-align: center;
-        padding: 0 78px;
-        
+        padding: 0 78px;    
+    }
+
+    /* ======================
+    PRODUCT PAGE
+    =========================*/
+
+    .product-info {
+        display: flex;
+        padding-top: 80px;
+    }
+
+    .product-images {
+        width: 30%;
+        margin-right: 50px;
+    }
+
+    .product-details {
+        width: 70%;
+    }
+
+    .product-details h1 {
+        font-size: 40px;
+    }
+
+    .diamond-weight-form {
+        font-size: 25px;
+    }
+
+    .other-options h2 {
+        font-size: 34px;
+    }
+
+    .color-options, .all-models {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .all-models li {
+        margin: 0 10px;
+    }
+
+    .color-options img {
+        margin: 0 20px;
     }
 
 }
