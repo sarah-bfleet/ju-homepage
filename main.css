@@ -445,7 +445,6 @@ address a:hover {
     background-color: white;
     border: none;
     color: #a7b6ad;
-    /*width: 176.8px;*/
     display: inline-block;
 }
 
@@ -498,6 +497,35 @@ address a:hover {
 .colors {
     background-color: #d8ece1;
     padding: 40px 20px;
+    position: relative;
+}
+
+.models {
+    position: relative;
+}
+
+#arrow-left-colors {
+    border-width: 15px 25px 15px 0;
+    border-color: transparent white transparent transparent;
+    left: 10px;
+}
+
+#arrow-right-colors {
+    border-width: 15px 0 15px 25px;
+    border-color: transparent transparent transparent white;
+    right: 10px;
+}
+
+#arrow-left-models {
+    border-width: 15px 25px 15px 0;
+    border-color: transparent white transparent transparent;
+    left: 10px;
+}
+
+#arrow-right-models {
+    border-width: 15px 0 15px 25px;
+    border-color: transparent transparent transparent white;
+    right: 10px;
 }
 
 .colors h2 {
@@ -524,7 +552,7 @@ address a:hover {
     border: none;
 }
 
-.color-options {
+.color-options, .all-models {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -534,6 +562,18 @@ address a:hover {
 .color-options li {
     margin: 15px 0;
 }
+
+#diamond-weight {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    color: #8F7463;
+    outline: none;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+
 
 /* ====================================
      ==================================
@@ -784,6 +824,10 @@ address a:hover {
 
     .color-options img {
         margin: 0 20px;
+    }
+
+    .hide-arrow {
+        display: none;
     }
 
 }
