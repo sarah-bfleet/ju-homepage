@@ -524,6 +524,17 @@ address a:hover {
     border: none;
 }
 
+.color-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-options li {
+    margin: 15px 0;
+}
+
 /* ====================================
      ==================================
        Media Queries - Smaller Tablet 
@@ -764,8 +775,7 @@ address a:hover {
 
     .color-options, .all-models {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: row;
     }
 
     .all-models li {
