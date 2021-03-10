@@ -197,6 +197,7 @@ nav ul {
 
 nav li {
     margin: 0 8px;
+    text-transform: uppercase;
 }
 .navbar a:hover {
     color: #91a298;
@@ -542,6 +543,15 @@ address a:hover {
     display: inline-block;
 }
 
+#diamond-weight {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    color: #8F7463;
+    outline: none;
+    font-size: 20px;
+}
+
 .bag-btn {
     background-color: #8f7463;
     color: white;
@@ -563,15 +573,72 @@ address a:hover {
     margin: 15px 0;
 }
 
-#diamond-weight {
-    padding: 10px 20px;
-    border-radius: 8px;
-    border: none;
-    color: #8F7463;
-    outline: none;
-    font-size: 20px;
-    margin-left: 20px;
+
+.insta-ref {
+    padding: 1px 4px;
 }
+
+/* =======================
+     BRIDAL PAGE 
+==========================*/
+
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.dropdown button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    margin-right: 5px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+.engagement-ring {
+    padding-top: 50px;
+}
+
+.ring-details {
+    background-color: #e2f1e8;
+    color: #8f7463;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.rings {
+    display: flex;
+    padding-top: 50px;
+}
+
+.ring1 {
+    margin-right: 10px;
+}
+
+.price {
+    padding-top: 8px;
+}
+
+.ring-details p {
+    margin: 0;
+    line-height: 1;
+}
+
+
+
 
 
 
@@ -673,12 +740,6 @@ address a:hover {
         margin-left: 50px;
     }
 
-    nav ul {
-       display: flex;
-       
-       text-transform: uppercase;
-    }
-
     nav li {
         margin: 0 50px;
     }
@@ -777,7 +838,6 @@ address a:hover {
     }
 
     .subscribe-btn {
-       
         display: block;
         text-align: center;
         padding: 0 78px;    
@@ -809,6 +869,7 @@ address a:hover {
         font-size: 25px;
     }
 
+
     .other-options h2 {
         font-size: 34px;
     }
@@ -830,6 +891,59 @@ address a:hover {
         display: none;
     }
 
+ /* ======================
+    BRIDAL PAGE
+    =========================*/
+    .engagement-ring {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .engagement-ring-pic, .engagement-ring-details  {
+        width: 50%;
+    }
+
+    .engagement-ring-pic {
+        margin-right: 30px;
+    }
+
+    .engagement-ring-details h1 {
+        text-transform: uppercase;
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+
+    .dropdown button {
+        font-size: 20px;
+    }
+    
+    .rings {
+        padding-top: 100px;
+        justify-content: space-between;
+    }
+
+    .ring1 {
+        margin-right: 0;
+    }
+
+    .ring-details {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .ring-details p {
+        margin: 10px 0px;
+        font-size: 20px;
+    }
+
+    .price {
+        border-left: 1px solid #8f7463;
+        padding: 0 0 0 15px;
+    }
+
+   
 }
      
  /* ==============================
