@@ -103,8 +103,10 @@ html {
 body {
     background-color: #bed1c6;
     color: white;
+    /*color: #555;*/
     margin: 0;
     padding: 0;
+    line-height: 1.5;
 }
 
 p {
@@ -584,14 +586,17 @@ address a:hover {
 
 
 .dropdown {
+    background-color: #bed1c6;
+    text-transform: uppercase;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-transform: uppercase;
+    position: sticky;
+    top: 0;
 }
 
-.dropdown button {
+.dropbtn {
     background: none;
     border: none;
     color: white;
@@ -600,11 +605,21 @@ address a:hover {
     font-size: 16px;
     font-family: 'Pathway Gothic One', sans-serif;
     margin-right: 5px;
+    
+}
+
+.dropbtn:hover, .dropbtn:focus, .drop-arrow:hover, .drop-arrow:focus {
+    color: #8f7463;
 }
 
 .button-container {
     display: flex;
     align-items: center;
+}
+
+.dropdown-content a:hover {
+    color: #8f7463;
+    display: block;
 }
 
 .engagement-ring {
@@ -621,6 +636,7 @@ address a:hover {
 
 .rings {
     display: flex;
+    justify-content: center;
     padding-top: 50px;
 }
 
@@ -917,10 +933,15 @@ address a:hover {
     .dropdown button {
         font-size: 20px;
     }
-    
+        
     .rings {
         padding-top: 100px;
         justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .ring-bridal {
+        margin: 12px 0;
     }
 
     .ring1 {
@@ -1096,5 +1117,11 @@ address a:hover {
        padding: 0 120px;
        
    }
+
+    /* =======================
+         BRIDAL PAGE 
+    =========================*/
+
+
 
 }
