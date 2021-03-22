@@ -674,10 +674,11 @@ address a:hover {
 
 .styled-list {
   list-style-type: disc;
+  margin-left: 5px;
 }
 
 .terms:hover {
-    font-weight: bold;
+    font-weight: boldf;
 }
 
 .delivery {
