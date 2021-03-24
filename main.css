@@ -283,7 +283,7 @@ nav li {
     PRICING SECTION 
 =================================== */
 
-.section-2-bg {
+.homepage-prices {
   background: url("img/bg-new.png") center no-repeat;
   background-size: cover;
   color: #a1aaa5;
@@ -601,32 +601,40 @@ address a:hover {
   margin-top: 25px;
 }
 
+.bridal-ring-gallery {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.add-margin {
+  margin-right: 10px;
+}
+
+.bridal-ring-pic img {
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .ring-details {
   background-color: #e2f1e8;
   color: #8f7463;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   padding: 5px;
-}
-
-.rings {
-  display: flex;
-  justify-content: center;
-  padding-top: 50px;
-}
-
-.ring1 {
-  margin-right: 10px;
-}
-
-.price {
-  padding-top: 8px;
 }
 
 .ring-details p {
   margin: 0;
   line-height: 1;
 }
+
+.price {
+  padding-top: 8px;
+}
+
 
 /* =======================
      CHARITY PAGE 
@@ -645,7 +653,7 @@ address a:hover {
   display: none;
 }
 
-.div2 h2 {
+.charity-product-details h2 {
   font-size: 22px;
   text-align: left;
 }
@@ -669,7 +677,7 @@ address a:hover {
 }
 
 .change-color:hover {
-    color: #8f7463;
+  color: #8f7463;
 }
 
 .styled-list {
@@ -678,7 +686,7 @@ address a:hover {
 }
 
 .terms:hover {
-    font-weight: boldf;
+  font-weight: boldf;
 }
 
 .delivery {
@@ -717,9 +725,7 @@ address a:hover {
   }
 
   .border-bottom {
-    margin: 0 auto 20px;
     width: 40%;
-    height: 2px;
     background: #a1aaa5;
   }
 }
@@ -749,9 +755,7 @@ address a:hover {
   }
 
   .top-header {
-    display: flex;
     justify-content: center;
-    align-items: center;
     padding-top: 30px;
   }
 
@@ -791,7 +795,7 @@ address a:hover {
     margin: 0 50px;
   }
 
-  .section-1 p {
+  .homepage-intro p {
     font-size: 20px;
   }
 
@@ -804,7 +808,6 @@ address a:hover {
     top: 280px;
     left: 20px;
     font-size: 20px;
-    padding: 10px 50px;
   }
 
   .discover.box-2 {
@@ -821,18 +824,11 @@ address a:hover {
 
   .ring-pics {
     display: flex;
+    position: relative;
   }
 
   .ring-pics div {
     margin: 0 5px;
-  }
-
-  .our-collection {
-    position: relative;
-  }
-
-  .ring-pics {
-    position: relative;
   }
 
   .ring {
@@ -840,13 +836,7 @@ address a:hover {
   }
 
   .arrow {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
     margin-top: -35px;
-    width: 0;
-    height: 0;
-    border-style: solid;
   }
 
   #arrow-left {
@@ -878,9 +868,6 @@ address a:hover {
   }
 
   footer .col-1 h3:after {
-    content: "";
-    display: block;
-    margin: 0 auto;
     width: 60%;
   }
 
@@ -922,7 +909,6 @@ address a:hover {
 
   .color-options,
   .all-models {
-    display: flex;
     flex-direction: row;
   }
 
@@ -982,15 +968,6 @@ address a:hover {
     margin-left: 20px;
   }
 
-  .filter-categories {
-    border-left: 1px solid white;
-    padding-left: 10px;
-  }
-
-  .filter-colors {
-    padding-right: 10px;
-  }
-
   .dropdown-content a:hover {
     color: #8f7463;
     display: block;
@@ -998,6 +975,15 @@ address a:hover {
 
   .mobile-dropdown-container {
     display: none;
+  }
+
+  .filter-categories {
+    border-left: 1px solid white;
+    padding-left: 10px;
+  }
+
+  .filter-colors {
+    padding-right: 10px;
   }
 
   .engagement-ring {
@@ -1026,35 +1012,34 @@ address a:hover {
     font-size: 20px;
   }
 
-  .rings {
-    padding-top: 100px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .ring-bridal {
-    margin: 12px 0;
-  }
-
-  .ring1 {
-    margin-right: 0;
+  .bridal-ring-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 350px;
+    align-items: stretch;
+    padding: 50px 0 10px;
+    gap: 10px;
   }
 
   .ring-details {
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    padding: 0;
   }
 
   .ring-details p {
-    margin: 10px 0px;
-    font-size: 20px;
+    margin: 16px 0;
+    font-size: 18px;
   }
 
   .price {
     border-left: 1px solid #8f7463;
     padding: 0 0 0 15px;
   }
+  
+  .add-margin {
+  margin-right: 0;
+  }
+
 }
 
 /* ==============================
@@ -1081,9 +1066,7 @@ address a:hover {
   }
 
   .top-header {
-    display: flex;
     justify-content: space-around;
-    align-items: center;
     width: 60%;
     margin: auto;
   }
@@ -1116,23 +1099,17 @@ address a:hover {
     margin-right: 100px;
   }
 
-  .discover-images {
-    display: flex;
-  }
-
   .discover button {
     font-size: 28px;
     top: 440px;
     left: 60px;
-    font-size: 28px;
-    padding: 10px 50px;
   }
 
   .box-2 {
     margin: 0 50px;
   }
 
-  .section-2-bg {
+  .homepage-prices {
     margin-bottom: 40px;
   }
 
@@ -1168,9 +1145,6 @@ address a:hover {
     =========================*/
 
   footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
     font-size: 36px;
     padding-top: 135px;
   }
@@ -1179,19 +1153,11 @@ address a:hover {
     margin: 0;
   }
 
-  footer .col-1 h3:after {
-    content: "";
-    display: block;
-    margin: 0 auto;
-    width: 60%;
-  }
-
   footer ul {
     padding: 0;
   }
 
   .social {
-    display: flex;
     justify-content: space-around;
   }
 
@@ -1201,8 +1167,6 @@ address a:hover {
 
   .subscribe-btn {
     font-size: 30px;
-    display: block;
-    text-align: center;
     padding: 0 120px;
   }
 
@@ -1218,7 +1182,7 @@ address a:hover {
     display: none;
   }
 
-  .flex {
+  .charity-product-info {
     display: flex;
     align-items: flex-start;
     margin-top: 50px;
@@ -1246,27 +1210,27 @@ address a:hover {
     display: inline;
   }
 
-  .div1 {
+  .charity-product-pic {
     width: 30%;
   }
 
-  .div2 {
+  .charity-product-details {
     width: 50%;
   }
 
-  .div2 h1 {
+  .charity-product-details h1 {
     margin: 0;
   }
 
-  .div2 h2 {
+  .charity-product-details h2 {
     margin: 40px 0 20px;
   }
 
-  .div2 p:last-child {
+  .charity-product-details p:last-child {
     font-size: 20px;
     margin-top: 30px;
   }
-  
+
   .view-count {
     font-size: 18px;
   }
